@@ -8,7 +8,7 @@
 
 <title>
   
-    归档: 2019
+    Archive: 2019
   
 </title>
 
@@ -75,21 +75,21 @@
           
             
               <li class="category-list-container">
-                <a href="javascript:;">分类</a>
+                <a href="javascript:;">Category</a>
                 
               </li>
             
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">标签</a>
+                <a href="javascript:;">Tag</a>
                 
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">归档</a>
+                <a href="javascript:;">Archive</a>
                 <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">3</span></li></ul>
               </li>
             
@@ -178,281 +178,194 @@
       </div>
       <div class="article-entry">
         
-          <ol>
-<li><p>html<br> 文本 （纯字符）<br> 超级文本标记语言</p>
-<pre><code>字符，图片，超链接，视频，音频</code></pre><p> 载体 - 文档</p>
- <h1>hello world</h1>
- <p>段落</p>
- <video src="a.mp4"></video>
- <a href="http://www.baidu.com" target="_blank" rel="noopener">百度一下</a>
-</li>
-<li><p>B/S架构<br> b浏览器<br> s服务器</p>
-</li>
-<li><p>网络概念<br> Http  超文本传输协议<br> url     统一资源定位符</p>
-<pre><code>http://www.baidu.com/index.html
-http://ip:port/path
-http://134.175.154.93:80/basic/start.html
-    主机位置：134.175.154.93
-    服务地址：
-        80         apache
-        3306     mysql
-        ...
-        /var/www/html apache的部署目录
-    资源路径
-        /basic/start.html</code></pre><p> uri     统一资源标识符</p>
-</li>
-<li><p>html网页<br> 1) 开发流程</p>
-<pre><code>1.1 编写网页 （sublime/vscode）
-1.2 本地测试
-1.3 部署（linux）
-    将本地的html网页上传至云服务器上，并且部署到apache静态服务器上
-1.4 网络测试
-    http://134.175.154.93/1-helloworld.html</code></pre><p> 2) 网页元素</p>
-<pre><code>html4
-    &lt;strong&gt;&lt;/strong&gt;
--&gt;
-html5
-    &lt;strong&gt;&lt;/strong&gt;
-
-程序员     编写 
-浏览器 解析 
-    webapp
-
-    移动互联 -&gt; H5
-        android     webapp
-            浏览器 google h5
-        ios
-            浏览器 safari h5
-
-注释
-    &lt;!--注释--&gt;
-    美团
-
-元素
-    开始标签，子元素，结束标签
-    &lt;div id=&apos;one&apos;&gt;hello world&lt;/div&gt;
-    &lt;div&gt;
-        &lt;span&gt;hello world&lt;/span&gt;
-    &lt;/div&gt;
-属性
-    在开始标签中可以添加属性
-        &lt;div 属性名=属性值 属性名=属性值&gt;
-        属性名不区分大小写
-        &lt;div id=&quot;one&quot;&gt;&lt;/div&gt;
-        &lt;div ID=&quot;one&quot;&gt;&lt;/div&gt;
-    核心属性（绝大多数标签都可以应用的属性）
-        id             文档内部的唯一标识
-        class     类
-            &lt;div class=&quot;first one&quot;&gt;one&lt;/div&gt;
-            &lt;div class=&quot;first two&quot;&gt;two&lt;/div&gt;
-            &lt;div class=&quot;first three&quot;&gt;three&lt;/div&gt;
-        title     描述
-        style     样式，取值为css规则
-            css规则,键值对，键值之间通过冒号分割，规则之间通过分号分割
-            &lt;div id=&apos;one&apos; style=&quot;color:#333;backgroud:#ededed&quot;&gt;&lt;/div&gt;
-    特有属性
-        a
-            href
-            target
-        img
-            alt
-            src
-    h5拓展属性
-        data-xxx
-            &lt;div data-nn=&apos;one&apos;&gt;&lt;/div&gt;
-
-3) 结构
-    doctype     声明部分 
-    html
-        head
-            不会显示到浏览器视口中
-            title        显示在浏览器选项卡
-            meta         用于设置元信息,配置
-                charset=utf-8     
-                gbk
-                big5     报社     
-                    环球新闻导报（php）
-                utf-8 
-                    nihao     汉语拼音
-                    hello     函数
-
-                编码
-                    编辑器 UTF-8
-                解码
-                    浏览器 
-        body
-            网页主体
-4) 元素
-    1. 块元素 （box）
-        作用：作为页面框架，或者容器。是页面的主体
-        特性：
-            1) 独占一行空间
-            2) 默认宽度为100%，默认高度由子元素或者内容决定 
-            3) 可以为其指定宽高 style=&quot;width:;height:;&quot; 
-
-            div     无意义的块元素（无招）
-            h1~h3    标题
-                font-size
-                font-weight
-                margin
-            p         段落
-                margin
-            html
-            body
-                margin
-            ul、li     无序列表，列表项    
-                ul
-                    margin
-                    padding
-                    list-style
-                li
-            ol、li      有序列表，列表项
-                ol
-                    margin
-                    padding
-                    list-style
-            dl、dt、dd     有序列表
-                dl
-                    margin
-                dd
-                    margin
-
-            H5新增的块元素（语义化标签）
-                header(头)
-                nav
-                article（主体）
-                section (部分)
-                footer（脚）
-                aside
-
-    2. 行内元素(label)
-        作用：点缀网页，填充内容
-        特性：
-            1) 与其他行内元素共享一行空间
-            2) 默认宽高由内容决定
-            3) 不能为其指定宽和高
-            4) 行内元素中不可以嵌套块元素，但块元素中可以嵌套行内元素
-
-        span     无意义的行内元素
-        a         超级链接（axure open link）
-            默认样式
-                color
-                text-decoration
-                cursor
-            默认事件（js - dom） 点击事件
-            href
-                url
-                相对路径
-                绝对路径
-                mailto
-                锚点
-                ...
-
-            target
-                _self
-                _blank
-        img
-            src     图片地址
-                url
-                相对路径
-                绝对路径
-                base64格式的数据
-            alt     图片找不到的时候文本替换
-
-            图片地图
-            &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
-            &lt;map&gt;
-            canvas
-
-        strong
-        bold
-        b
-        em
-        i
-        sub
-        sup
-        del
-        ...
-    3. 功能元素    （行内元素）
-        1) 表格
-            table
-                【属性】border、width、、、、
-                caption
-                thead
-                tbody
-                    tr
-                        td/th
-                        【属性】colspan、rowspan、width、align
-                        td/th中可以放任意子元素
-                tfoot
-
-        2) 表单</code></pre></li>
-</ol>
-<h1 id="day02"><a href="#day02" class="headerlink" title="day02"></a>day02</h1><pre><code>1. 复习
-    html 超文本标记语言
-        编译型语言
-            C         .c         -&gt; .o(linux)
-            Java     .java -&gt; .class(jvm - linux)
-        解释型语言
-            PHP
-            js     
-                .js 
-            html(标记语言)
-                .html
-2. 语法
-    注释 &lt;!----&gt;
-    元素，开始标签，结束标签，子元素
-    属性，核心属性，特有属性，拓展属性
-3. 互联网
-    局域网，广域网
-
-    w3c组织     html/css     
-        w3c     标准             
-        程序员    编写代码
-        浏览器     解释代码
-
-    sun公司（oracle）     Java
-        sun             标准
-        程序员            编写代码
-        (sun)jvm     解释代码
-
-    http协议
-        请求报文
-        响应报文
-    url
-    b/s
-4. 块元素
-5. 行内元素
-6. 如何合理的应用元素
-    h1~h3    标题
-    p     
-    ul&gt;li</code></pre><p>参考网站<br>    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
-<p>=========作业【下周一完成】=========</p>
+          <p>axure</p>
 <ol>
-<li><p>将上课的工程进行check in 、check out测试</p>
+<li><p>原型工具</p>
 </li>
-<li><p>以组为单位，选取一个项目进行原型绘制<br> 以手机端为案例 （美团、小众App）<br> 组长创建项目，并且上传项目到svn上 groupX</p>
-<pre><code>svn://134.175.154.93/web1903/groupX/xx
-分工
-    张三： 通讯录，聊天
-    李四： 发现，朋友圈</code></pre><p> 组员更新项目，将项目下载到本地进行开发</p>
-<p> TIM共享文档</p>
-<p> 简历</p>
-<pre><code>个人信息
-    博客地址：http://www.segmentfault.com/xxx
-职业技能
-    1. axure
-    2. html5 css3 javascript
-    ...
-项目经验
-    1. 绘制newbalance原型
-        xxx axure svn 团队
-        ....
+<li><p>软件开发</p>
+<p>  农大app</p>
+<ol>
+<li><p>可行性分析     (boss) 5人一组（组长）</p>
+</li>
+<li><p>需求分析<br> 产品经理<br> 乙方     -        甲方</p>
+<p> 1) 视频监控<br> 2) 查看学生的出勤情况<br> 3）登录</p>
+<p> 手写<br> ps<br> html<br> axure    </p>
+</li>
+<li><p>产品设计(ui设计)<br> ps 设计师</p>
+</li>
+<li><p>开发阶段</p>
+<p> 淘宝 （重构）<br> psd     -&gt;     拆分-&gt; html</p>
+<p> （数据交互）<br> 数据库    -&gt; 【服务层Java】-&gt;    html</p>
+<p> 概念理解（axure）</p>
+<pre><code>块级元素
+行内元素
+行高
+背景
+边框
+内边距</code></pre><p> 产品经理<br> 对接 :产品经理&lt;-&gt;（前端）&lt;-&gt;后台 </p>
+</li>
+</ol>
+</li>
+<li><p>软件应用<br> Java unix(window)<br> axure:</p>
+<pre><code>甲方    （明确需求）
+设计师            细化页面（省略）
+前端工程师    重构（颜色，高度，布局）
+后端工程师     数据建模
+                        （表，表与表只见的关系）</code></pre><p> 原版（官网 axure）</p>
+<pre><code>汉化
+英文
+4G + 机械硬盘
+4G + 固态（64G、128G）</code></pre><p> 前端（mac pro）    </p>
+<pre><code>linux 
+pc
+app (android/ios)</code></pre></li>
+</ol>
+<ol start="4">
+<li>编程（软件开发，计算机）</li>
+</ol>
+<ol start="5">
+<li><p>软件应用<br> 5.1 界面介绍</p>
+<pre><code>工具栏
+属性栏
+导航
+元件库
+主界面
+属性栏
+图层</code></pre><p> 5.2 软件应用</p>
+<pre><code>鼠标
+    file -&gt; new
+键盘
+    ctrl + n 新建
 
-        产品地址：http://134.175.154.93/basic/start.html</code></pre></li>
-<li><p>h5与h4区别<br> 1) doctype声明<br> 2) meta的声明<br> 3) 添加了新的标签，淘汰了一些旧的标签</p>
+    积累
+    ctrl + z 撤销回退
+    ctrl + y 前进
+    ctrl + c 复制
+    ctrl + v 粘贴
+    ctrl + g 组合</code></pre></li>
+</ol>
+<pre><code>axure
+    .rp     -&gt; 内存     -&gt; 磁盘
+
+文本文档 
+    .txt     -&gt; 磁盘
+
+    c:/users/licy/desctop/
+
+归档
+    briup
+        1axure
+            day01
+            day02
+            day03
+        2htmlcss
+        3js
+        4project
+        5jquery
+        ...
+文件夹和搜索选项的设置
+    显示后缀名
+    显示隐藏文件
+
+绘制思路：
+    上 -&gt;     下 （横向盒子）
+    外 -&gt; 内 、 左 -&gt; 右 (纵向盒子)
+
+    父子元素
+        导航
+        容器box
+            购物车    box - 图标 (行内元素)
+            logo     box - 文本 （行内元素)
+            导航      box - 图标(行内元素)</code></pre><hr>
+<p>作业：<br>    1. 完善newbalance首页<br>    2. 完成newbalance男子列表页</p>
+<pre><code>建议拓展     
+    链家
+    ...</code></pre><p>day03<br>    前端三要素（html/css/js）<br>        html     框架                     身材     html<br>        css     样式，修饰框架     化妆     美化<br>        js         交互                     才艺     事件机制</p>
+<pre><code>    jquery
+        html + js(dom)
+    小程序
+        wxml    html
+        wxss     css
+        js         js
+    react
+        .js
+            jsx     js + xml(html)
+            css
+
+
+1. axure (英文环境) 
+2. 使用
+    元件 -&gt; page
+    box         盒子【块元素】（div）
+        width             
+        height
+        background
+        padding
+        margin
+        border
+            border-width
+            border-style
+            border-color
+            border-radius
+        animation:
+        transition: rotate
+        ...
+    image
+        src
+    表单
+        input
+            程序交互入口
+3. 布局（box）
+    通过盒子来进行布局（table、span）
+    布局流程：
+        从上往下，从外往内
+    1) 行级布局
+    2) 列级布局 
+        浮动 定位 伸缩盒
+        组（容器 - 子元素）
+
+-----------
+1. 内置元件(css)
+    1)基础元件 (box，段落，标题..)
+    2)高级元件（内联框架,中继器）
+    3)表单元件 (单行文本域，多行文本框，单选按钮，复选按钮，下拉菜单)
+    4)表格与菜单
+    5)图标
+
+    中继器：
+        数据 -驱动-&gt; 页面(模板)
+        4行         ---&gt; 4个模板
+
+2. 事件机制
+    事件源                 （元素）
+    事件处理函数 
+    事件对象             
+
+    &lt;div id=&quot;one&quot;&gt;hello&lt;/div&gt;
+    let one = document.getElementById(&quot;one&quot;);
+    one.onclick = function(event){
+        alert(&quot;hello&quot;);
+    }
+3. 第三方元件库
+
+模态框</code></pre><hr>
+<p>表格<br>     显示学生信息</p>
+<ol>
+<li><p>svn原理<br> 服务器端</p>
+<pre><code>134.175.154.93
+subversion</code></pre><p> 客户端</p>
+<pre><code>axure 
+    -&gt; 分享项目到服务器端中的subversion里的仓库中，
+    svn://134.175.154.93/web1903/groupx/xx</code></pre><p> 版本控制</p>
+<pre><code>checkout     修改的时候，操作
+checkin     修改完毕后，提交
+team -&gt; gel all changes ...</code></pre></li>
+<li><p>后台管理页面的原型设计<br> 品字布局<br> 模态框（信息输入，信息的展示）</p>
 </li>
-<li><p>语义化理解（编程思想）</p>
+<li><p>PS<br> 测量 - 单位（像素）<br> 取色 rgb </p>
+<h2 id="切片-png"><a href="#切片-png" class="headerlink" title=" 切片 png"></a> 切片 png</h2><p> 抠图、设计… [BRIUP]</p>
+</li>
+<li><p>axure<br> 元件库    </p>
 </li>
 </ol>
 
