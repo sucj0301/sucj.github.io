@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="html html">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-30T02:31:22.373Z">
+<meta property="og:updated_time" content="2019-07-30T10:57:01.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html">
 <meta name="twitter:description" content="html html">
@@ -79,22 +79,22 @@
           
             
               <li class="category-list-container">
-                <a href="javascript:;">分类</a>
+                <a href="javascript:;">Category</a>
                 
               </li>
             
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">标签</a>
+                <a href="javascript:;">Tag</a>
                 
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">3</span></li></ul>
+                <a href="javascript:;">Archive</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">4</span></li></ul>
               </li>
             
           
@@ -366,18 +366,94 @@ html5
         1) 表格
             table
                 【属性】border、width、、、、
-                caption
-                thead
-                tbody
+                caption     表格标题
+                thead         表头部分
+                    tr 
+                        th/td
+                tbody         表格主体部分【不可以省略】
                     tr
                         td/th
                         【属性】colspan、rowspan、width、align
                         td/th中可以放任意子元素
-                tfoot
+                tfoot         表底部分
+                    tr
+                        td
+            【注意】：每一行中的列数应该是相等
+        2) 表单（前后台交互）
+            用户 -&gt; 表单 -&gt; 后台 -&gt; 数据库
 
-        2) 表单</code></pre></li>
+            注册页面
+            登录页面
+            搜索框
+
+            &lt;form action=&quot;&quot;&gt;
+                input
+                select
+                textarea
+            &lt;/form&gt;</code></pre></li>
 </ol>
-<h1 id="day02"><a href="#day02" class="headerlink" title="day02"></a>day02</h1><pre><code>1. 复习
+<pre><code>form
+    action     后台接口地址
+    method     请求方式
+        get
+            参数拼接在url后面，通过?来分割
+            传递参数较少
+            查询学生信息、通过id删除学生信息、
+        post
+            参数存放在请求体中，安全
+            传递参数更多
+            保存或者更新学生信息、批量删除
+    enctype 编码方式
+        1. enctype=&apos;application/x-www-form-urlencoded&apos;
+
+            浏览器就会将参数转换为【查询字符串 qs】格式
+            username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
+
+        2. multipart/form-data
+            当有附件在表单中的时候，enctype务必设置为这种格式
+
+
+    ajax
+        查询字符串
+            username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
+        JSON
+            &apos;{&quot;username&quot;:&quot;charles&quot;,&quot;password&quot;:&quot;123321&quot;}&apos;
+input
+    name:             不能省略，作为参数中的key
+    value:             作为参数中的value,在按钮中务必指定value值
+    type:
+        text             单行文本框
+        password     密码框
+        submit         提交按钮
+        file             附件选择器
+        radio         单选按钮
+        checkbox     复选按钮
+
+        h5拓展(兼容性，功能)
+            email
+            date
+            number
+            ...
+            progress
+
+    checked:         单值属性    默认选址
+    placeholder 提示语
+
+select
+    option
+        标签中的文本显示在网页中，提交的值应该是option的value值，当这个值没有设定的时候，提交的是标签中的文本
+        &lt;option value=&quot;sx&quot;&gt;山西&lt;/option&gt;     sx
+        &lt;option&gt;山西&lt;/option&gt;                             山西
+
+textarea
+    多行文本域
+    placeholder 提示语
+
+第三方库
+    日期插件
+    地址选择器地址
+    附件上传
+    富文本</code></pre><h1 id="day02"><a href="#day02" class="headerlink" title="day02"></a>day02</h1><pre><code>1. 复习
     html 超文本标记语言
         编译型语言
             C         .c         -&gt; .o(linux)
@@ -449,7 +525,7 @@ html5
   <footer class="article-footer">
     
   <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="署名-相同方式共享">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="Attribution-ShareAlike">
       <img src="/images/cc/cc.png">
       
           <img src="/images/cc/by.png">
@@ -457,7 +533,7 @@ html5
           <img src="/images/cc/sa.png">
       
       <span>
-        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
       </span>
     </a>
   </div>
