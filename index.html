@@ -1,489 +1,180 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
 
-
-
-<title>
   
-    Hexo
+  <title>
+    Hexo -
+    
+  </title>
   
-</title>
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
 
 
-  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <meta name="description" content>
+  <meta name="author" content="John Doe">
+  <meta property="og:title" content="Hexo">
+  <meta property="og:description" content>
+  <meta property="og:site_name" content="Hexo">
+  <meta property="og:image" content="http://yoursite.com/img/default.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content>
+  <meta name="twitter:title" content="Hexo">
 
+  <meta name="twitter:image" content="http://yoursite.com/img/default.jpg">
 
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
-  <link rel="icon" href="/favicon.png">
-
-
-<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
-<link rel="stylesheet" href="/styles/main.css">
-
-
-
-
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="/./css/style.css">
 
 </head>
-<body
-  
-    class="monochrome"
-  
-  >
-  <div class="mobile-header">
-  <button class="sidebar-toggle" type="button">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <a class="title" href="/">Hexo</a>
-</div>
 
-  <div class="main-container">
-    <div class="sidebar">
-  <div class="header">
-    <h1 class="title"><a href="/">Hexo</a></h1>
-    
-    <div class="info">
-      <div class="content">
-        
-        
-          <div class="author">John Doe</div>
-        
-      </div>
-      
-        <div class="avatar">
+<body>
+    <!-- Menu -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+  <div class="container">
+    <a class="navbar-brand logo" href="http://yoursite.com">
+      Hexo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item item">
           
-            <a href="/about"><img src="https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200"></a>
-          
-        </div>
-      
+        <li class="nav-item item">
+          <a class="nav-link" href="/">
+            Home</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="/archives">
+            🗂️Archives</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="https://hexo.io/">
+            Hexo</a>
+        </li>
+        
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="body">
+</nav>
+
+    <main class="page main-page">
+        <div class="band">
     
-      
-        <ul class="nav">
-          
-            
-              <li class="category-list-container">
-                <a href="javascript:;">Category</a>
-                
-              </li>
-            
-          
-            
-              <li class="tag-list-container">
-                <a href="javascript:;">Tag</a>
-                
-              </li>
-            
-          
-            
-              <li class="archive-list-container">
-                <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">4</span></li></ul>
-              </li>
-            
-          
-        </ul>
-      
-        <ul class="nav">
-          
-            
-              <li>
-                <a href="/" title="Homepage">Homepage</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/archives" title="By Year">By Year</a>
-              </li>
-            
-          
-        </ul>
-      
-        <ul class="nav">
-          
-            
-              <li>
-                <a href="https://github.com/denjones/hexo-theme-chan" title="Chan" target="_blank" rel="noopener">Chan</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="https://github.com/denjones" title="Github" target="_blank" rel="noopener">Github</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/atom.xml" title="RSS">RSS</a>
-              </li>
-            
-          
-        </ul>
-      
     
-  </div>
+
+<div class="item-1">
+  <a href="/2019/07/30/css/" class="post">
+    <div class="thumb" style="background-image: url(/./img/img1.jpg);"></div>
+    <article>
+      <h1>
+        css
+      </h1>
+      
+      <span>
+        2019-07-30</span>
+    </article>
+  </a>
 </div>
+    
+    
 
-    <div class="main-content">
+<div class="item-2">
+  <a href="/2019/07/29/axure/" class="post">
+    <div class="thumb" style="background-image: url(/./img/img1.jpg);"></div>
+    <article>
+      <h1>
+        axure
+      </h1>
       
-        <div style="max-width: 1000px">
-      
-          
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2019/07/30/css/" >
-  css
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2019/07/30/css/"><span class="article-date">
-  2019-07-30
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1><p>css</p>
-<ol>
-<li><p>介绍<br> 层叠样式表</p>
-<p> 层叠</p>
-<pre><code>多个样式表修饰同一个元素
-继承
-优先级</code></pre><p> 样式表</p>
-<pre><code>{
-    color:#fff;
-}</code></pre></li>
-<li><p>在html中如何应用css<br> 1) 在元素中添加style属性，style属性值为css样式规则</p>
-<pre><code>&lt;div style=&quot;width:100px;height:100px;&quot;&gt;&lt;/div&gt;
-缺点:样式与结构与杂糅
-优点:简单直接，优先级高 </code></pre><p> 2) 将样式添加到head标签中的style标签里</p>
-<pre><code>&lt;style&gt;
-
-&lt;/style&gt;</code></pre><p> 3)</p>
-</li>
-<li><p>语法<br> 选择器 {</p>
-<pre><code>样式名:样式值;
-样式名:样式值;
-...</code></pre><p> }</p>
-</li>
-</ol>
-<p>参考网站<br>    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
-<p>=========作业【下周一完成】=========</p>
-<ol>
-<li><p>将上课的工程进行check in 、check out测试</p>
-</li>
-<li><p>以组为单位，选取一个项目进行原型绘制<br> 以手机端为案例 （美团、小众App）<br> 组长创建项目，并且上传项目到svn上 groupX</p>
-<pre><code>svn://134.175.154.93/web1903/groupX/xx
-分工
-    张三： 通讯录，聊天
-    李四： 发现，朋友圈</code></pre><p> 组员更新项目，将项目下载到本地进行开发</p>
-<p> TIM共享文档</p>
-<p> 简历</p>
-<pre><code>个人信息
-    博客地址：http://www.segmentfault.com/xxx
-职业技能
-    1. axure
-    2. html5 css3 javascript
-    ...
-项目经验
-    1. 绘制newbalance原型
-        xxx axure svn 团队
-        ....
-
-        产品地址：http://134.175.154.93/basic/start.html</code></pre></li>
-<li><p>h5与h4区别<br> 1) doctype声明<br> 2) meta的声明<br> 3) 添加了新的标签，淘汰了一些旧的标签</p>
-</li>
-<li><p>语义化理解（编程思想）</p>
-</li>
-</ol>
-<p>参照接口<br><a href="http://134.175.154.93:8099/swagger-ui.html" target="_blank" rel="noopener">http://134.175.154.93:8099/swagger-ui.html</a><br>表单 -&gt; 后台接口    </p>
-<ol start="4">
-<li><p>h5中新增了哪些标签</p>
-</li>
-<li><p>H5对表单拓展<br> input </p>
-<pre><code>type：number ,date,email</code></pre><p> progress</p>
-</li>
-</ol>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2019/07/29/axure/" >
-  axure
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2019/07/29/axure/"><span class="article-date">
-  2019-07-29
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="axure"><a href="#axure" class="headerlink" title="axure"></a>axure</h1><ol>
+      <p>
+        <h1 id="axure"><a href="#axure" class="headerlink" title="axure"></a>axure</h1><ol>
 <li><p>原型工具</p>
 </li>
 <li><p>软件开发</p>
-          <p>
-            <a href="/2019/07/29/axure/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2019/07/29/html/" >
-  html
-</a>
-
-      </h3>
+      </p>
       
+      <span>
+        2019-07-29</span>
+    </article>
+  </a>
+</div>
+    
+    
 
-      <div class="article-info">
-        <a href="/2019/07/29/html/"><span class="article-date">
-  2019-07-29
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <h1 id="html"><a href="#html" class="headerlink" title="html"></a>html</h1><ol>
-<li><p>html </p>
-          <p>
-            <a href="/2019/07/29/html/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2019/07/29/box/" >
-  box
-</a>
-
-      </h3>
+<div class="item-3">
+  <a href="/2019/07/29/html/" class="post">
+    <div class="thumb" style="background-image: url(/./img/img1.jpg);"></div>
+    <article>
+      <h1>
+        html
+      </h1>
       
-
-      <div class="article-info">
-        <a href="/2019/07/29/box/"><span class="article-date">
-  2019-07-29
-</span>
-</a>
+      <p>
         
+      </p>
+      
+      <span>
+        2019-07-29</span>
+    </article>
+  </a>
+</div>
+    
+    
 
+<div class="item-4">
+  <a href="/2019/07/29/box/" class="post">
+    <div class="thumb" style="background-image: url(/./img/img1.jpg);"></div>
+    <article>
+      <h1>
+        box
+      </h1>
+      
+      <p>
         
-
-      </div>
-      <div class="article-entry">
-        
-          <!DOCTYPE html>
-<html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-<table>
-    <tr>
-        <th colspan="2"></th>
-        <th>星期一</th>
-        <th>星期二</th>
-        <th>星期三</th>
-        <th>星期四</th>
-        <th>星期五</th>
-        <th>星期六</th>
-        <th>星期日</th> 
-    </tr>
-    <tr>
-        <td rowspan="2">上午</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-
-</body>
-</html>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-
-
-
-
-
-          <div class="main-footer">
-  
-    © 2019 Hexo - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
-  
+      </p>
+      
+      <span>
+        2019-07-29</span>
+    </article>
+  </a>
+</div>
+    
 </div>
 
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+  <div class="container">
+    <div class="social-icons">
       
-        </div>
+      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
+      
+      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
+      
+      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
       
     </div>
   </div>
-  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
-  <link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-             It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/PhotoSwipe/photoswipe.js"></script>
-  <script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
-
-
-<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
-<script src="/scripts/main.js"></script>
-
+</footer>
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

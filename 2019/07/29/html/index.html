@@ -1,183 +1,95 @@
-<!DOCTYPE html>
 <html>
+<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
 
-
-
-<title>
   
-    html
+  <title>
+    html |
+    Hexo
+  </title>
   
-</title>
-
-<meta name="description" content="html html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="html">
-<meta property="og:url" content="http://yoursite.com/2019/07/29/html/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="html html">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-30T11:13:24.503Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="html">
-<meta name="twitter:description" content="html html">
 
 
-  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <meta name="description" content>
+  <meta name="author" content="John Doe">
+  <meta property="og:title" content="html">
+  <meta property="og:description" content>
+  <meta property="og:site_name" content="Hexo">
+  <meta property="og:image" content="http://yoursite.com/img/default.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content>
+  <meta name="twitter:title" content="html">
 
+  <meta name="twitter:image" content="http://yoursite.com/img/default.jpg">
 
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
-  <link rel="icon" href="/favicon.png">
-
-
-<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
-<link rel="stylesheet" href="/styles/main.css">
-
-
-
-
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="/./css/style.css">
 
 </head>
-<body class="monochrome">
-  <div class="mobile-header">
-  <button class="sidebar-toggle" type="button">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <a class="title" href="/">Hexo</a>
-</div>
 
-  <div class="main-container">
-    <div class="sidebar">
-  <div class="header">
-    <h1 class="title"><a href="/">Hexo</a></h1>
-    
-    <div class="info">
-      <div class="content">
-        
-        
-          <div class="author">John Doe</div>
-        
-      </div>
-      
-        <div class="avatar">
+<body>
+    <!-- Menu -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+  <div class="container">
+    <a class="navbar-brand logo" href="http://yoursite.com">
+      Hexo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item item">
           
-            <a href="/about"><img src="https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200"></a>
-          
-        </div>
-      
+        <li class="nav-item item">
+          <a class="nav-link" href="/">
+            Home</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="/archives">
+            🗂️Archives</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="https://hexo.io/">
+            Hexo</a>
+        </li>
+        
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="body">
-    
-      
-        <ul class="nav">
-          
-            
-              <li class="category-list-container">
-                <a href="javascript:;">Category</a>
+</nav>
+
+    <main class="page main-page">
+        <div class="container blogPost">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="blog-post-title">
+                html
+            </h2>
+            <p class="meta"><i class="far fa-clock"></i>
+                2019-07-29
                 
-              </li>
-            
-          
-            
-              <li class="tag-list-container">
-                <a href="javascript:;">Tag</a>
-                
-              </li>
-            
-          
-            
-              <li class="archive-list-container">
-                <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">4</span></li></ul>
-              </li>
-            
-          
-        </ul>
-      
-        <ul class="nav">
-          
-            
-              <li>
-                <a href="/" title="Homepage">Homepage</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/archives" title="By Year">By Year</a>
-              </li>
-            
-          
-        </ul>
-      
-        <ul class="nav">
-          
-            
-              <li>
-                <a href="https://github.com/denjones/hexo-theme-chan" title="Chan" target="_blank" rel="noopener">Chan</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="https://github.com/denjones" title="Github" target="_blank" rel="noopener">Github</a>
-              </li>
-            
-          
-            
-              <li>
-                <a href="/atom.xml" title="RSS">RSS</a>
-              </li>
-            
-          
-        </ul>
-      
-    
-  </div>
-</div>
-
-    <div class="main-content">
-      
-        <div style="max-width: 1000px">
-      
-          <article id="post-html" class="article article-type-post">
-  
-    <h1 class="article-header">
-      html
-    </h1>
-  
-  
-
-  <div class="article-info">
-    <span class="article-date">
-  2019-07-29
-</span>
-
-    
-
-    
-
-  </div>
-  <div class="article-entry">
-    <h1 id="html"><a href="#html" class="headerlink" title="html"></a>html</h1><ol>
-<li><p>html </p>
-<a id="more"></a>
-<p> 文本 （纯字符）<br> 超级文本标记语言</p>
-<pre><code>字符，图片，超链接，视频，音频</code></pre><p> 载体 - 文档</p>
- <h1>hello world</h1>
- <p>段落</p>
- <video src="a.mp4"></video>
- <a href="http://www.baidu.com" target="_blank" rel="noopener">百度一下</a>
+            </p>
+            <!-- Content -->
+            <a id="more"></a>
+<ol>
+<li><p>文本 （纯字符）</p>
 </li>
-<li><p>B/S架构<br> b浏览器<br> s服务器</p>
+<li><p>超级文本标记语言<br>字符，图片，超链接，视频，音频<br>载体 - 文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;hello world&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;段落&lt;/p&gt;</span><br><span class="line">&lt;video src=&quot;a.mp4&quot;&gt;&lt;/video&gt;</span><br><span class="line">&lt;a href=&quot;http://www.baidu.com&quot;&gt;百度一下&lt;/a&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>网络概念<br> Http  超文本传输协议<br> url     统一资源定位符</p>
+<li><p>B/S架构<br> b:浏览器<br> s:服务器</p>
+</li>
+<li><p>网络概念<br> 1)Http:超文本传输协议<br> 2)url :统一资源定位符</p>
 <pre><code>http://www.baidu.com/index.html
 http://ip:port/path
 http://134.175.154.93:80/basic/start.html
@@ -188,452 +100,286 @@ http://134.175.154.93:80/basic/start.html
         ...
         /var/www/html apache的部署目录
     资源路径
-        /basic/start.html</code></pre><p> uri     统一资源标识符</p>
+        /basic/start.html</code></pre><p> 3)uri :统一资源标识符</p>
 </li>
-<li><p>html网页<br> 1) 开发流程</p>
-<pre><code>1.1 编写网页 （sublime/vscode）
-1.2 本地测试
-1.3 部署（linux）
-    将本地的html网页上传至云服务器上，并且部署到apache静态服务器上
-1.4 网络测试
-    http://134.175.154.93/1-helloworld.html</code></pre><p> 2) 网页元素</p>
-<pre><code>html4
-    &lt;strong&gt;&lt;/strong&gt;
--&gt;
-html5
-    &lt;strong&gt;&lt;/strong&gt;
+<li><p>html网页<br>1) 开发流程<br> 1.1 编写网页 （sublime/vscode）<br> 1.2 本地测试<br> 1.3 部署    （linux）</p>
+<pre><code>将本地的html网页上传至云服务器上，并且部署到apache静态服务器上</code></pre><p> 1.4 网络测试</p>
+<pre><code>http://134.175.154.93/1-helloworld.html</code></pre><p>2) 网页元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">html4</span><br><span class="line">	&lt;strong&gt;&lt;/strong&gt;</span><br><span class="line">html5</span><br><span class="line">	&lt;strong&gt;&lt;/strong&gt;</span><br></pre></td></tr></table></figure>
 
-程序员     编写 
-浏览器 解析 
-    webapp
-
-    移动互联 -&gt; H5
-        android     webapp
-            浏览器 google h5
-        ios
-            浏览器 safari h5
-
-注释
-    &lt;!--注释--&gt;
-    美团
-
-元素
-    开始标签，子元素，结束标签
-    &lt;div id=&apos;one&apos;&gt;hello world&lt;/div&gt;
-    &lt;div&gt;
-        &lt;span&gt;hello world&lt;/span&gt;
-    &lt;/div&gt;
-属性
-    在开始标签中可以添加属性
-        &lt;div 属性名=属性值 属性名=属性值&gt;
-        属性名不区分大小写
-        &lt;div id=&quot;one&quot;&gt;&lt;/div&gt;
-        &lt;div ID=&quot;one&quot;&gt;&lt;/div&gt;
-    核心属性（绝大多数标签都可以应用的属性）
-        id             文档内部的唯一标识
-        class     类
-            &lt;div class=&quot;first one&quot;&gt;one&lt;/div&gt;
-            &lt;div class=&quot;first two&quot;&gt;two&lt;/div&gt;
-            &lt;div class=&quot;first three&quot;&gt;three&lt;/div&gt;
-        title     描述
-        style     样式，取值为css规则
-            css规则,键值对，键值之间通过冒号分割，规则之间通过分号分割
-            &lt;div id=&apos;one&apos; style=&quot;color:#333;backgroud:#ededed&quot;&gt;&lt;/div&gt;
-    特有属性
-        a
-            href
-            target
-        img
-            alt
-            src
-    h5拓展属性
-        data-xxx
-            &lt;div data-nn=&apos;one&apos;&gt;&lt;/div&gt;
-
-3) 结构
-    doctype     声明部分 
-    html
-        head
-            不会显示到浏览器视口中
-            title        显示在浏览器选项卡
-            meta         用于设置元信息,配置
-                charset=utf-8     
-                gbk
-                big5     报社     
-                    环球新闻导报（php）
-                utf-8 
-                    nihao     汉语拼音
-                    hello     函数
-
-                编码
-                    编辑器 UTF-8
-                解码
-                    浏览器 
+</li>
+</ol>
+<p>注释<br>            <!--注释--></p>
+<p>元素<br>            开始标签，子元素，结束标签<br>            <div id="one">hello world</div><br>            <div><br>                <span>hello world</span><br>            </div><br>属性<br>            在开始标签中可以添加属性<br>                &lt;div 属性名=属性值 属性名=属性值&gt;<br>                属性名不区分大小写<br>                <div id="one"></div><br>                <div id="one"></div><br>            核心属性（绝大多数标签都可以应用的属性）<br>                id             文档内部的唯一标识<br>                class     类<br>                    <div class="first one">one</div><br>                    <div class="first two">two</div><br>                    <div class="first three">three</div><br>                title     描述<br>                style     样式，取值为css规则<br>                    css规则,键值对，键值之间通过冒号分割，规则之间通过分号分割<br>                    <div id="one" style="color:#333;backgroud:#ededed"></div><br>            特有属性<br>                a<br>                    href<br>                    target<br>                img<br>                    alt<br>                    src<br>            h5拓展属性<br>                data-xxx<br>                    <div data-nn="one"></div></p>
+<p>3) 结构<br>            doctype     声明部分<br>            html<br>                head<br>                    不会显示到浏览器视口中<br>                    title        显示在浏览器选项卡<br>                    meta         用于设置元信息,配置<br>                        charset=utf-8<br>                        gbk<br>                        big5     报社<br>                            环球新闻导报（php）<br>                        utf-8<br>                            nihao     汉语拼音<br>                            hello     函数</p>
+<pre><code>        编码
+            编辑器 UTF-8
+        解码
+            浏览器 
+body
+    网页主体</code></pre><p>4) 元素<br>            1. 块元素 （box）<br>                作用：作为页面框架，或者容器。是页面的主体<br>                特性：<br>                    1) 独占一行空间<br>                    2) 默认宽度为100%，默认高度由子元素或者内容决定<br>                    3) 可以为其指定宽高 style=”width:;height:;” </p>
+<pre><code>        div     无意义的块元素（无招）
+        h1~h3    标题
+            font-size
+            font-weight
+            margin
+        p         段落
+            margin
+        html
         body
-            网页主体
-4) 元素
-    1. 块元素 （box）
-        作用：作为页面框架，或者容器。是页面的主体
-        特性：
-            1) 独占一行空间
-            2) 默认宽度为100%，默认高度由子元素或者内容决定 
-            3) 可以为其指定宽高 style=&quot;width:;height:;&quot; 
-
-            div     无意义的块元素（无招）
-            h1~h3    标题
-                font-size
-                font-weight
+            margin
+        ul、li     无序列表，列表项    
+            ul
                 margin
-            p         段落
+                padding
+                list-style
+            li
+        ol、li      有序列表，列表项
+            ol
                 margin
-            html
-            body
+                padding
+                list-style
+        dl、dt、dd     有序列表
+            dl
                 margin
-            ul、li     无序列表，列表项    
-                ul
-                    margin
-                    padding
-                    list-style
-                li
-            ol、li      有序列表，列表项
-                ol
-                    margin
-                    padding
-                    list-style
-            dl、dt、dd     有序列表
-                dl
-                    margin
-                dd
-                    margin
+            dd
+                margin
 
-            H5新增的块元素（语义化标签）
-                header(头)
-                nav
-                article（主体）
-                section (部分)
-                footer（脚）
-                aside
+    H5新增的块元素（语义化标签）
+            header(头)
+            nav
+            article（主体）
+            section (部分)
+            footer（脚）
+            aside
 
-    2. 行内元素(label)
-        作用：点缀网页，填充内容
-        特性：
-            1) 与其他行内元素共享一行空间
-            2) 默认宽高由内容决定
-            3) 不能为其指定宽和高
-            4) 行内元素中不可以嵌套块元素，但块元素中可以嵌套行内元素
+2. 行内元素(label)
+    作用：点缀网页，填充内容
+    特性：
+        1) 与其他行内元素共享一行空间
+        2) 默认宽高由内容决定
+        3) 不能为其指定宽和高
+        4) 行内元素中不可以嵌套块元素，但块元素中可以嵌套行内元素
 
-        span     无意义的行内元素
-        a         超级链接（axure open link）
-            默认样式
-                color
-                text-decoration
-                cursor
-            默认事件（js - dom） 点击事件
-            href
-                url
-                相对路径
-                绝对路径
-                mailto
-                锚点
-                ...
-
-            target
-                _self
-                _blank
-        img
-            src     图片地址
-                url
-                相对路径
-                绝对路径
-                base64格式的数据
-            alt     图片找不到的时候文本替换
-
-            图片地图
-            &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
-            &lt;map&gt;
-            canvas
-
-        strong
-        bold
-        b
-        em
-        i
-        sub
-        sup
-        del
-        ...
-    3. 功能元素    （行内元素）
-        1) 表格
-            table
-                【属性】border、width、、、、
-                caption     表格标题
-                thead         表头部分
-                    tr 
-                        th/td
-                tbody         表格主体部分【不可以省略】
-                    tr
-                        td/th
-                        【属性】colspan、rowspan、width、align
-                        td/th中可以放任意子元素
-                tfoot         表底部分
-                    tr
-                        td
-            【注意】：每一行中的列数应该是相等
-        2) 表单（前后台交互）
-            用户 -&gt; 表单 -&gt; 后台 -&gt; 数据库
-
-            注册页面
-            登录页面
-            搜索框
-
-            &lt;form action=&quot;&quot;&gt;
-                input
-                select
-                textarea
-            &lt;/form&gt;</code></pre></li>
-</ol>
-<pre><code>form
-    action     后台接口地址
-    method     请求方式
-        get
-            参数拼接在url后面，通过用?来分割
-            传递参数较少
-            查询学生信息、通过id删除学生信息、
-        post
-            参数存放在请求体中，安全
-            传递参数更多
-            保存或者更新学生信息、批量删除
-    enctype 编码方式
-        1. enctype=&apos;application/x-www-form-urlencoded&apos;
-
-            浏览器就会将参数转换为【查询字符串 qs】格式
-            username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
-
-        2. multipart/form-data
-            当有附件在表单中的时候，enctype务必设置为这种格式
-
-
-    ajax
-        查询字符串
-            username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
-        JSON
-            &apos;{&quot;username&quot;:&quot;charles&quot;,&quot;password&quot;:&quot;123321&quot;}&apos;
-input
-    name:             不能省略，作为参数中的key
-    value:             作为参数中的value,在按钮中务必指定value值
-    type:
-        text             单行文本框
-        password     密码框
-        submit         提交按钮
-        file             附件选择器
-        radio         单选按钮
-        checkbox     复选按钮
-
-        h5拓展(兼容性，功能)
-            email
-            date
-            number
+    span     无意义的行内元素
+    a         超级链接（axure open link）
+        默认样式
+            color
+            text-decoration
+            cursor
+        默认事件（js - dom） 点击事件
+        href
+            url
+            相对路径
+            绝对路径
+            mailto
+            锚点
             ...
-            progress
 
-    checked:         单值属性    默认选址
-    placeholder 提示语
+        target
+            _self
+            _blank
+    img
+        src     图片地址
+            url
+            相对路径
+            绝对路径
+            base64格式的数据
+        alt     图片找不到的时候文本替换
 
-select
-    option
-        标签中的文本显示在网页中，提交的值应该是option的value值，当这个值没有设定的时候，提交的是标签中的文本
-        &lt;option value=&quot;sx&quot;&gt;山西&lt;/option&gt;     sx
-        &lt;option&gt;山西&lt;/option&gt;                             山西
+        图片地图
+        &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+        &lt;map&gt;
+        canvas
 
-textarea
-    多行文本域
-    placeholder 提示语
-
-第三方库
-    日期插件
-    地址选择器地址
-    附件上传
-    富文本</code></pre><h1 id="day02"><a href="#day02" class="headerlink" title="day02"></a>day02</h1><pre><code>1. 复习
-    html 超文本标记语言
-        编译型语言
-            C         .c         -&gt; .o(linux)
-            Java     .java -&gt; .class(jvm - linux)
-        解释型语言
-            PHP
-            js     
-                .js 
-            html(标记语言)
-                .html
-2. 语法
-    注释 &lt;!----&gt;
-    元素，开始标签，结束标签，子元素
-    属性，核心属性，特有属性，拓展属性
-3. 互联网
-    局域网，广域网
-
-    w3c组织     html/css     
-        w3c     标准             
-        程序员    编写代码
-        浏览器     解释代码
-
-    sun公司（oracle）     Java
-        sun             标准
-        程序员            编写代码
-        (sun)jvm     解释代码
-
-    http协议
-        请求报文
-        响应报文
-    url
-    b/s
-4. 块元素
-5. 行内元素
-6. 如何合理的应用元素
-    h1~h3    标题
-    p     
-    ul&gt;li</code></pre><p>参考网站<br>    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
-<p>=========作业【下周一完成】=========</p>
-<ol>
-<li><p>将上课的工程进行check in 、check out测试</p>
-</li>
-<li><p>以组为单位，选取一个项目进行原型绘制<br> 以手机端为案例 （美团、小众App）<br> 组长创建项目，并且上传项目到svn上 groupX</p>
-<pre><code>svn://134.175.154.93/web1903/groupX/xx
-分工
-    张三： 通讯录，聊天
-    李四： 发现，朋友圈</code></pre><p> 组员更新项目，将项目下载到本地进行开发</p>
-<p> TIM共享文档</p>
-<p> 简历</p>
-<pre><code>个人信息
-    博客地址：http://www.segmentfault.com/xxx
-职业技能
-    1. axure
-    2. html5 css3 javascript
+    strong
+    bold
+    b
+    em
+    i
+    sub
+    sup
+    del
     ...
-项目经验
-    1. 绘制newbalance原型
-        xxx axure svn 团队
-        ....
+3. 功能元素    （行内元素）
+    1) 表格
+        table
+            【属性】border、width、、、、
+            caption     表格标题
+            thead         表头部分
+                tr 
+                    th/td
+            tbody         表格主体部分【不可以省略】
+                tr
+                    td/th
+                    【属性】colspan、rowspan、width、align
+                    td/th中可以放任意子元素
+            tfoot         表底部分
+                tr
+                    td
+        【注意】：每一行中的列数应该是相等
+    2) 表单（前后台交互）
+        用户 -&gt; 表单 -&gt; 后台 -&gt; 数据库
 
-        产品地址：http://134.175.154.93/basic/start.html</code></pre></li>
-<li><p>h5与h4区别<br> 1) doctype声明<br> 2) meta的声明<br> 3) 添加了新的标签，淘汰了一些旧的标签</p>
-</li>
-<li><p>语义化理解（编程思想）</p>
-</li>
-</ol>
+        注册页面
+        登录页面
+        搜索框
 
-  </div>
-  <footer class="article-footer">
-    
-  <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="Attribution-ShareAlike">
-      <img src="/images/cc/cc.png">
-      
-          <img src="/images/cc/by.png">
-        
-          <img src="/images/cc/sa.png">
-      
-      <span>
-        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-      </span>
-    </a>
-  </div>
-
-
-    
-
-  </footer>
-</article>
+        &lt;form action=&quot;&quot;&gt;
+            input
+            select
+            textarea
+        &lt;/form&gt;
 
 
+        form
+            action     后台接口地址
+            method     请求方式
+                get
+                    参数拼接在url后面，通过用?来分割
+                    传递参数较少
+                    查询学生信息、通过id删除学生信息、
+                post
+                    参数存放在请求体中，安全
+                    传递参数更多
+                    保存或者更新学生信息、批量删除
+            enctype 编码方式
+                1. enctype=&apos;application/x-www-form-urlencoded&apos;
+
+                    浏览器就会将参数转换为【查询字符串 qs】格式
+                    username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
+
+                2. multipart/form-data
+                    当有附件在表单中的时候，enctype务必设置为这种格式
+
+
+            ajax
+                查询字符串
+                    username=charles&amp;password=123321&amp;nickname=李四&amp;emailcharles@briup.com
+                JSON
+                    &apos;{&quot;username&quot;:&quot;charles&quot;,&quot;password&quot;:&quot;123321&quot;}&apos;
+        input
+            name:             不能省略，作为参数中的key
+            value:             作为参数中的value,在按钮中务必指定value值
+            type:
+                text             单行文本框
+                password     密码框
+                submit         提交按钮
+                file             附件选择器
+                radio         单选按钮
+                checkbox     复选按钮
+
+                h5拓展(兼容性，功能)
+                    email
+                    date
+                    number
+                    ...
+                    progress
+
+            checked:         单值属性    默认选址
+            placeholder 提示语
+
+        select
+            option
+                标签中的文本显示在网页中，提交的值应该是option的value值，当这个值没有设定的时候，提交的是标签中的文本
+                &lt;option value=&quot;sx&quot;&gt;山西&lt;/option&gt;     sx
+                &lt;option&gt;山西&lt;/option&gt;                             山西
+
+        textarea
+            多行文本域
+            placeholder 提示语
+
+        第三方库
+            日期插件
+            地址选择器地址
+            附件上传
+            富文本</code></pre><p>参考网站<br>    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
+
+            <br />
+            <p class="meta">
+                
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+            
+
+<span><b>
+        TL;DR</b></span>
+<p>
+    Yet another hexo theme.
+</p>
+<hr />
+
+
+<span><b>
+        TL;DR 2</b></span>
+<p>
+    No, not another one :/
+</p>
+<hr />
 
 
 
 
 
-          <div class="main-footer">
-  
-    © 2019 Hexo - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
-  
+
+<span><a href="https://twitter.com/hexojs" target="_blank" rel="noopener"><b><i class="fab fa-twitter-square"></i>
+            <i class="fas fa-at"></i>
+            hexojs</b></a></span>
+<br />
+<a class="twitter-timeline" data-height="800" data-dnt="true" data-chrome="nofooter transparent noheader noborders "
+    href="https://twitter.com/hexojs?ref_src=twsrc%5Etfw"></a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>
+    </div>
 </div>
+<!-- Menu fade on scroll -->
+<script>
+    var isScrolling;
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener('scroll', function (event) {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                $("#navbar").slideDown();
+            } else {
+                $("#navbar").slideUp();
+            }
+            prevScrollpos = currentScrollPos;
+        }, 66);
+    }, false);
+</script>
 
+<a class="float-left gradient btn paginationbtn" href="/2019/07/29/box/"><i class="fas fa-chevron-left"></i></a>
+
+
+<a class="float-right gradient btn paginationbtn" href="/2019/07/29/axure/"><i class="fas fa-chevron-right"></i></a>
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+  <div class="container">
+    <div class="social-icons">
       
-        </div>
+      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
+      
+      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
+      
+      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
       
     </div>
   </div>
-  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
-  <link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-             It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/PhotoSwipe/photoswipe.js"></script>
-  <script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
-
-
-<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
-<script src="/scripts/main.js"></script>
-
+</footer>
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
